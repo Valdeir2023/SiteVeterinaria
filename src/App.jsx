@@ -7,6 +7,10 @@ import Titulo from "./components/Titulo";
 
 import Formulario from "./components/Formulario";
 
+
+import { collection, getDocs } from "firebase/firestore";
+import db from "./database/firebaseConfig";
+
 import "./App.css";
 
 const App = () => {
@@ -45,7 +49,19 @@ const App = () => {
     },
   ];
 
+
+
+  const lerBanco =  async () => {
+
+    const comentarios= await getDocs(collection(db, "comentarios"));
+    comentarios.forEach ( (documento) => {console.log(documento.data()) });
+    //ACIMA para cada item dentro do array 'comentarios' vamos executar um console.log
+
+  }
+  
   return (
+
+    
     <div>
       <Cabecalho />
       <Menu />
@@ -67,8 +83,10 @@ const App = () => {
         <Titulo texto="Contato" />
 
         <Formulario campos={campos} />
+        <button onClick={lerBanco}>Ler dados do banco</button>
       </Secao>
     </div>
   );
 };
+
 export default App;

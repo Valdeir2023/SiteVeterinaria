@@ -66,7 +66,7 @@ const App = () => {
       <Cabecalho />
       <Menu />
       <Secao>
-        <img src="src/assets/topo.jpg"></img>
+        <img src="src/assets/topo.png"></img>
       </Secao>
 
       <Secao>

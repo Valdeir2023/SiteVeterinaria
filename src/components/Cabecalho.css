@@ -1,0 +1,28 @@
+/* Cabecalho.css */
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f8f9fa; /* Cor de fundo clara */
+  }
+  
+  #cabecalho img {
+    width: auto;
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner */
+    height: auto;
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+  }
+  
+  #cabecalho h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #343a40; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    background: transparent; /* Degradê de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  

@@ -1,21 +1,43 @@
+/* Formulario.css */
 #form_contato {
-  background-color: gray;
-  width: 550px;
-  padding: 15px;
+  background: linear-gradient(135deg, #00ff2aa6, #00eeff);  /* Degradê de azul claro para rosa */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px;
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 20px auto; /* Centralizar o formulário */
+  box-shadow: 0 4px 6px rgba(242, 248, 248, 0.377); /* Sombra sutil */
 }
+
 .contato {
   display: flex;
   align-items: center;
-  height: 30px;
-  width: 100%;
+  margin-bottom: 15px; /* Espaçamento entre os campos */
 }
 
 .contato label {
   width: 150px;
-  text-align: end;
-  padding-right: 5px;
+  text-align: right; /* Alinhamento à direita */
+  padding-right: 10px;
+  font-weight: bold; /* Negrito para os rótulos */
 }
 
 .contato input {
-  width: 100%;
+  width: calc(100% - 160px); /* Largura ajustada do input */
+  padding: 10px;
+  border: 1px solid #ddfdf9; /* Borda cinza clara */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+button[type="submit"] {
+  background-color: #37ccfa; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branca */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #09eb27; /* Cor de fundo mais escura ao passar o mouse */
 }
